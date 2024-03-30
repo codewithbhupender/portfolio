@@ -1,0 +1,5 @@
+ul.navbar-nav.mr-auto {
+    width: 100%;
+    direction: ltr;
+    justify-content: end;
+}
