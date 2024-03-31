@@ -3,3 +3,136 @@ ul.navbar-nav.mr-auto {
     direction: ltr;
     justify-content: end;
 }
+.header-container{
+    background-color: #00A2E3;
+    padding: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.navbar{
+    box-shadow: 0px -2px 9px 2px #666869;
+    z-index: 4;
+}
+
+.header-content{
+        /* position: absolute;
+        padding: 31px;
+        top: 10%;
+        left: 0;*/
+        z-index: 3;
+        color: white; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+    }
+    .header-logo{
+        /* position: absolute;
+        padding: 31px;
+        top: 10%;
+        left: 0;*/
+        z-index: 2;
+        color: white; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            align-items: center;
+    }
+
+.header-heading:before {
+        content : "";
+        position: absolute;
+        height  : 4rem;
+        width   : 8rem;  /* or 100px */
+        border-bottom:5px solid #FFBB00;
+}
+
+.nav-item>a:hover{
+    border-bottom: 2px solid #00A2E3;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.nav-item.active>a {
+    color:#00A2E3 !important;
+}
+/* if screensize greater then 545 then set border width */
+
+@media (max-width: 539px) {
+    .header-heading:before {
+        content : "";
+        position: absolute;
+        height  : 2rem !important;
+        width   : 8rem;  /* or 100px */
+        border-bottom:5px solid #FFBB00;
+}
+.header-heading{
+    font-size: 1rem !important;
+}
+}
+@media (max-width: 665px) {
+    .header-heading{
+        font-size: 2rem;
+    }
+    .header-heading:before {
+        content : "";
+        position: absolute;
+        height  : 3rem;
+        width   : 8rem;  /* or 100px */
+        border-bottom:5px solid #FFBB00;
+}
+}
+@media (max-width: 335px) {
+    .header-heading{
+        font-size: 1rem;
+    }
+    .header-heading:before {
+        content : "";
+        position: absolute;
+        height  : 2rem;
+        width   : 8rem;  /* or 100px */
+        border-bottom:5px solid #FFBB00;
+}
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.row{
+    width: 100%;
+}
+
+#particles-js {
+    /* stay in a constant spot on the page, regardless of scroll */
+    position: fixed;
+    /* fill the entire page */
+    width: 100%;
+    height: 100%;
+    /* remove the space along the edges */ 
+    margin: 0;
+    padding: 0;
+    /* position it to start at the top of the page */
+    top: 0;
+    /* put it behind other content */
+    z-index: 1;
+}
